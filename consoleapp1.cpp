@@ -5,6 +5,11 @@
 #include <vector>
 #include <string>
 
+struct Book {
+    std::string title;
+    std::string author;
+};
+
 int main()
 {
     std::cout << "Hello World!\n";
