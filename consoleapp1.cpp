@@ -36,27 +36,14 @@ int main()
     int choice;
     std::string title, author;
 
-    do { 
+    do {
          std::cout << "\n1. Shto liber";
          std::cout << "\n2. Shfaq librat";
          std::cout << "\n3. Dil";
          std::cout << "\nZgjedh opsionin";
          std::cin >> choice;
          std::cin.ignore();
-        if (choice == 1) {
-            std::string title, author;
-            std::cout << "Titulli: ";
-            std::getline(std::cin, title);
-            std::cout << "Autori: ";
-            std::getline(std::cin, author);
-            myLibrary.addBook(title, author);
-            myLibrary.displayBooks();
-        }
-    } while (choice != 2);
 
-    return 0;
-    
-}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
