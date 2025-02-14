@@ -18,7 +18,17 @@ public:
         books.push_back({ title, author });
         std::cout << "Libri u shtua me sukses!" << std::endl;
     }
-
+    void displayBooks() const {
+        if (books.empty()) {
+            std::cout << "Asnje liber nuk eshte shtuar ende." << std::endl;
+            return;
+        }
+        std::cout << "Librat ne biblioteke:" << std::endl;
+        for (size_t i = 0; i < books.size(); ++i) {
+            std::cout << i + 1 << ". " << books[i].title << " nga " << books[i].author << std::endl;
+        }
+    }
+};
 
 int main()
 {
