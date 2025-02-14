@@ -32,7 +32,18 @@ public:
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Library myLibrary;
+    int choice;
+    std::string title, author;
+
+    do { 
+         std::cout << "\n1. Shto liber";
+         std::cout << "\n2. Shfaq librat";
+         std::cout << "\n3. Dil";
+         std::cout << "\nZgjedh opsionin";
+         std::cin >> choice;
+         std::cin.ignore();
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
