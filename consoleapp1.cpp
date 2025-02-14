@@ -43,7 +43,19 @@ int main()
          std::cout << "\nZgjedh opsionin";
          std::cin >> choice;
          std::cin.ignore();
-    }
+        if (choice == 1) {
+            std::string title, author;
+            std::cout << "Titulli: ";
+            std::getline(std::cin, title);
+            std::cout << "Autori: ";
+            std::getline(std::cin, author);
+            myLibrary.addBook(title, author);
+            myLibrary.displayBooks();
+        }
+    } while (choice != 2);
+
+    return 0;
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
