@@ -10,6 +10,16 @@ struct Book {
     std::string author;
 };
 
+class Library {
+private:
+    std::vector<Book> books;
+public:
+    void addBook(const std::string& title, const std::string& author) {
+        books.push_back({ title, author });
+        std::cout << "Libri u shtua me sukses!" << std::endl;
+    }
+
+
 int main()
 {
     std::cout << "Hello World!\n";
